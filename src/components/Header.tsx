@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Calendar } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Header = ({ onBookAppointment }: { onBookAppointment: () => void }) => {
   return (
@@ -29,6 +30,7 @@ const Header = ({ onBookAppointment }: { onBookAppointment: () => void }) => {
               <Phone className="h-5 w-5" />
               <span className="font-semibold">Emergency: 911</span>
             </a>
+            <ThemeToggle />
             <Button onClick={onBookAppointment} className="bg-primary hover:bg-primary-hover">
               <Calendar className="h-4 w-4 mr-2" />
               Book Appointment
